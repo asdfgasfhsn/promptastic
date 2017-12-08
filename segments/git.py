@@ -26,7 +26,9 @@ class Git(Segment):
         self.fg = colors.foreground(git_colors[1])
 
         current_commit_text = self.get_current_commit_decoration_text()
-        self.text = wd_glyph + ' ' + branch_name + glyphs.BRANCH + ' ' + current_commit_text
+        #self.text = wd_glyph + ' ' + branch_name + ' ' + glyphs.BRANCH + ' ' + current_commit_text
+        self.text = ' ' + glyphs.BRANCH + ' ' + branch_name + wd_glyph + ' ' + current_commit_text
+
 
     @staticmethod
     def get_branch_name():
@@ -75,10 +77,10 @@ class Git(Segment):
         # Statuses vs glyphs:
         STATUSES_GLYPHS = {
             #STATUS: glyph,
-            UNTRACKED_FILES: glyphs.RAINY,
-            CHANGES_NOT_STAGED: glyphs.CLOUDY,
-            ALL_CHANGES_STAGED: glyphs.SUNNY,
-            CLEAN: '',
+            UNTRACKED_FILES: ' ' + glyphs.RAINY,
+            CHANGES_NOT_STAGED: ' ' + glyphs.CLOUDY,
+            ALL_CHANGES_STAGED: ' ' + glyphs.SUNNY,
+            CLEAN: ' ',
             UNKNOWN: '?',
         }
 

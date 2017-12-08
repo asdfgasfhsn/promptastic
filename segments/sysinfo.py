@@ -67,15 +67,33 @@ class Time(Segment):
     fg = colors.foreground(theme.TIME_FG)
 
     def init(self):
-        self.text = glyphs.TIME + ' ' + str(time.strftime("%H:%M:%S"))
+        self.text = ' ' + glyphs.TIME + '  ' + str(time.strftime("%H:%M:%S")) + ' '
 
+class TimePlain(Segment):
+
+    def init(self):
+        self.text =  str(time.strftime("%H:%M:%S"))
 
 class UserAtHost(Segment):
     bg = colors.background(theme.USERATHOST_BG)
     fg = colors.foreground(theme.USERATHOST_FG)
 
     def init(self):
-        self.text = '{}@{}'.format(
+        self.text = ' {}@{} '.format(
             getpass.getuser(),
             socket.gethostname().replace('.local', '')
         )
+
+class User(Segment):
+    bg = colors.background(theme.USER_BG)
+    fg = colors.foreground(theme.USER_FG)
+
+    def init(self):
+        self.text = ' {} '.format(getpass.getuser())
+
+class Host(Segment):
+    bg = colors.background(theme.HOST_BG)
+    fg = colors.foreground(theme.HOST_FG)
+
+    def init(self):
+        self.text = ' {} '.format(socket.gethostname().replace('.local', ''))

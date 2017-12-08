@@ -9,7 +9,7 @@ class Ssh(Segment):
     fg = colors.foreground(theme.SSH_FG) + colors.bold()
 
     def init(self):
-        self.text = 'SSH'
+        self.text = ' SSH '
 
         if not os.getenv('SSH_CLIENT'):
             self.active = False

@@ -9,7 +9,7 @@ class NewLine(Segment):
 
 
 class Root(Segment):
-    text = '\\$ '
+    text = ' \\$> '
 
 
 class Divider(Segment):
@@ -20,6 +20,14 @@ class Divider(Segment):
         self.fg = prev.bg if prev and prev.bg else Padding.bg
         self.fg = self.fg.replace('setab', 'setaf')
 
+
+class DividerLeft(Segment):
+    text = glyphs.DIVIDER_LEFT
+
+    def set_colors(self, prev, next):
+        self.bg = next.bg if next and next.bg else Padding.bg
+        self.fg = prev.bg if prev and prev.bg else Padding.bg
+        self.fg = self.fg.replace('setab', 'setaf')
 
 class ExitCode(Segment):
     bg = colors.background(theme.EXITCODE_BG)

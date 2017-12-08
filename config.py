@@ -1,9 +1,14 @@
 # This is the configuration file which helps you customize your 'promptastic' installation.
 # For instructions on how to use the promptastic.py script, see the README.
 
+DIR_SHORTEN_LEN = 20
+DIR_LIMIT_DEPTH = 2
+ELLIPSIS = '...'
+
 # Patched fonts are special fonts best suited for terminals
-# True if the current terminal is using patched fonts (available at:
-# https://github.com/Lokaltog/powerline-fonts).
+# True if the current terminal is using patched fonts available at:
+# https://github.com/ryanoasis/nerd-fonts
+
 PATCHED_FONTS = True
 
 # The theme defines the colors used to draw individual segments.
@@ -14,11 +19,20 @@ THEME = 'default'
 # Segments are the single elements which compose the Bash shell prompt.
 # Enable or disable these segments to customize what you see on the shell prompt.
 SEGMENTS = {
-    # Current user's username plus @ plus machine's hostname.
-    'userathost': True,
+    # Seperate user/host info if desired.
+    'user': False,
+    'host': True,
+
+    # Combined username @ machine's hostname.
+    'userathost': False,
 
     # SSH tag when ssh-ing from another machine.
     'ssh': True,
+
+    # AWS and Kubernetes Assume Role stuff.
+    'ard': True,
+    'ardtimer': True,
+    'kubecontext': True,
 
     # Current directory path.
     'currentdir': True,
@@ -36,8 +50,11 @@ SEGMENTS = {
     'venv': True,
 
     # Number of running jobs, if any.
-    'jobs': True,
+    'jobs': False,
 
     # Current time.
-    'time': True,
+    'time': False,
+
+    # Current time but plain and on second line.
+    'timeplain': True,
 }
