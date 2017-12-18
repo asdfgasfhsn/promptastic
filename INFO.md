@@ -1,7 +1,7 @@
 1. Configuration
 ================
 *Promptastic* can be customized by editing the file `config.py`. This file contains 3 elements:
-**theme**, **patched fonts flag**, **segments**. 
+**theme**, **patched fonts flag**, **segments**.
 
 1.1. Themes
 -----------
@@ -24,11 +24,11 @@ See [CUSTOM-THEMES.md](https://github.com/nimiq/promptastic/blob/master/CUSTOM-T
 
 1.2. Patched fonts
 ------------------
-[Patched powerline-fonts](https://github.com/Lokaltog/powerline-fonts) can be used for
-better-looking glyphs. My favorite is
-[Sauce Code Powerline Light](https://github.com/Lokaltog/powerline-fonts/tree/master/SourceCodePro)
-. See [INSTALL.md](https://github.com/nimiq/promptastic/blob/master/INSTALL.md) in order to
-install patched fonts.
+See [INSTALL.md](https://github.com/asdfgasfhsn/promptastic/blob/master/INSTALL.md) in order to
+install patched fonts or visit the repos;
+
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+- [Patched powerline-fonts](https://github.com/Lokaltog/powerline-fonts)
 
 All screenshots in the next sections were taken in terminals using *Sauce Code Powerline Light*
 patched font. A terminal with no patched fonts looks like this:
@@ -64,7 +64,7 @@ A cross, only if the last command exited with a failure code.
 
 2.4. Current directory and read-only
 ------------------------------------
-The path of the current directory. A padlock is added in case the logged user has no write 
+The path of the current directory. A padlock is added in case the logged user has no write
 permission on the directory. A warning message is shown in case the current directory is not a
 valid path.
 

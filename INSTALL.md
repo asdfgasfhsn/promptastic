@@ -22,10 +22,10 @@ add the following line to `~/.bashrc`:
 
         export TERM='xterm-256color'
 - *Optional* - **Patched fonts** for better-looking glyphs.  
-Install patched [powerline-fonts](https://github.com/Lokaltog/powerline-fonts) and set the 
-terminal to use them. My favorite is
-[Sauce Code Powerline Light](https://github.com/Lokaltog/powerline-fonts/tree/master/SourceCodePro)
-.
+Install patched fonts and set the terminal to use them;
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) <-- preferred
+- [powerline-fonts](https://github.com/Lokaltog/powerline-fonts)
+
 
 Steps
 -----
