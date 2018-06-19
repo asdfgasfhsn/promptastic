@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import sys
 
-from segments import basics, sysinfo, filesystem, git, network
+from segments import basics, sysinfo, filesystem, git, network, gitrepo
 from utils.sys import get_valid_cwd, get_terminal_columns_n
 
 
@@ -173,10 +173,6 @@ if __name__ == '__main__':
     prompt.first_line_left.append(basics.Divider())
     prompt.first_line_left.append(git.Git())
     prompt.first_line_left.append(basics.Divider())
-    # prompt.first_line_left.append(filesystem.KubeContext())
-    # prompt.first_line_left.append(basics.Divider())
-    # prompt.first_line_left.append(filesystem.ArdTimer())
-    # prompt.first_line_left.append(basics.Divider())
     prompt.first_line_left.append(basics.ExitCode())
     prompt.first_line_left.append(basics.Divider())
 
@@ -194,6 +190,8 @@ if __name__ == '__main__':
     prompt.first_line_right.append(sysinfo.Jobs())
     prompt.first_line_right.append(basics.Divider())
     prompt.first_line_right.append(sysinfo.Time())
+    prompt.first_line_right.append(gitrepo.GitRepo())
+    prompt.first_line_right.append(basics.Divider())
 
     # Last line.
     prompt.last_line.append(sysinfo.TimePlain())

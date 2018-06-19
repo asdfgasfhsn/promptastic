@@ -45,6 +45,7 @@ SEGMENTS = {
 
     # Current git branch and status when the current directory is part of a git repo.
     'git': True,
+    'gitrepo': True,
 
     # Name of the current virtual environment (see http://www.virtualenv.org/), if any.
     'venv': True,
