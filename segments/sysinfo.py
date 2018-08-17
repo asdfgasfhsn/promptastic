@@ -96,4 +96,7 @@ class Host(Segment):
     fg = colors.foreground(theme.HOST_FG)
 
     def init(self):
-        self.text = ' {} '.format(socket.gethostname().replace('.local', ''))
+        if os.getenv('promptastic_host'):
+            self.text = ' {} '.format(os.getenv('promptastic_host'))
+        else:
+            self.text = ' {} '.format(socket.gethostname().replace('.local', ''))
