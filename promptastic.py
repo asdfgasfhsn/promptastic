@@ -173,6 +173,8 @@ if __name__ == '__main__':
     prompt.first_line_left.append(basics.Divider())
     prompt.first_line_left.append(git.Git())
     prompt.first_line_left.append(basics.Divider())
+    prompt.first_line_left.append(gitrepo.GitRepo())
+    prompt.first_line_left.append(basics.Divider())
     prompt.first_line_left.append(basics.ExitCode())
     prompt.first_line_left.append(basics.Divider())
 
@@ -190,7 +192,7 @@ if __name__ == '__main__':
     prompt.first_line_right.append(sysinfo.Jobs())
     prompt.first_line_right.append(basics.Divider())
     prompt.first_line_right.append(sysinfo.Time())
-    prompt.first_line_right.append(gitrepo.GitRepo())
+    #prompt.first_line_right.append(gitrepo.GitRepo())
     prompt.first_line_right.append(basics.Divider())
 
     # Last line.
