@@ -44,6 +44,29 @@ LIGHTER_GOLD = 178
 
 BROWN = 130
 
+# bg = #141C21
+BG_1 = 16
+# fg = #D9DBDF
+FG_1 = 188
+# fg-alt = #141C21
+FG_ALT = 16
+
+# shade1 = #1976D2
+# shade2 = #1E88E5
+BLUE_SHADE_1 = 32
+BLUE_SHADE_2 = 32
+
+# shade3 = #2196F3
+BLUE_SHADE_3 = 33
+# shade4 = #42A5F5
+# shade5 = #64B5F6
+BLUE_SHADE_4 = 75
+BLUE_SHADE_5 = 75
+# shade6 = #90CAF9
+BLUE_SHADE_6 = 117
+
+# heart
+RED_SHADE = 167
 
 def foreground(color):
     return '\[$(tput setaf {})\]'.format(color)
