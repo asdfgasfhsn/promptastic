@@ -1,0 +1,82 @@
+from utils import colors
+
+
+## bg = #141C21
+# BG_1 = 16
+## fg = #D9DBDF
+# FG_1 = 188
+## fg-alt = #141C21
+# FG_ALT = 16
+
+## shade1 = #1976D2
+## shade2 = #1E88E5
+# BLUE_SHADE_1 = 32
+# BLUE_SHADE_2 = 32
+
+## shade3 = #2196F3
+# BLUE_SHADE_3 = 33
+## shade4 = #42A5F5
+## shade5 = #64B5F6
+# BLUE_SHADE_4 = 75
+# BLUE_SHADE_5 = 75
+## shade6 = #90CAF9
+# BLUE_SHADE_6 = 117
+
+# # heart
+# RED_SHADE = 167
+
+# Segments colors.
+USERATHOST_BG = colors.BLUE_SHADE_6
+USERATHOST_FG = colors.WHITE
+
+SSH_BG = colors.LIGHT_ORANGE
+SSH_FG = colors.WHITE
+
+CURRENTDIR_BG = colors.BLUE_SHADE_1
+CURRENTDIR_FG = colors.FG_1
+
+READONLY_BG = colors.RED_SHADE
+READONLY_FG = colors.FG_1
+
+EXITCODE_BG = colors.FG_1
+EXITCODE_FG = colors.RED_SHADE
+
+PADDING_BG = colors.BLACK
+
+GIT_UNTRACKED_FILES_BG = colors.RED_SHADE
+GIT_UNTRACKED_FILES_FG = colors.NEARLY_WHITE_GREY
+GIT_CHANGES_NOT_STAGED_BG = colors.PINKISH_RED
+GIT_CHANGES_NOT_STAGED_FG = colors.NEARLY_WHITE_GREY
+GIT_ALL_CHANGES_STAGED_BG = colors.LIGHT_ORANGE
+GIT_ALL_CHANGES_STAGED_FG = colors.DARKER_GREY
+GIT_CLEAN_BG = colors.FG_1
+GIT_CLEAN_FG = colors.DARKER_GREY
+
+GITREPO_BG = colors.BG_1
+GITREPO_FG = colors.FG_1
+
+VENV_BG = colors.BLUE_SHADE_1
+VENV_FG = colors.FG_1
+
+JOBS_BG = colors.DARK_PURPLE
+JOBS_FG = colors.WHITE
+
+TIME_BG = colors.DARKER_GREY
+TIME_FG = colors.MID_DARK_GREY
+
+USER_BG = colors.WHITE
+USER_FG = colors.BLUE_SHADE_1
+
+HOST_BG = colors.BLUE_SHADE_6
+HOST_FG = colors.FG_ALT
+
+ARD_BG = colors.SMERALD
+ARD_FG = colors.EXTRA_LIGHT_GREY
+
+ARDTIMER_BG = colors.EXTRA_LIGHT_GREY
+ARDTIMER_FG = colors.SMERALD
+
+KUBE_BG = colors.SMERALD
+KUBE_FG = colors.EXTRA_LIGHT_GREY
+
+
